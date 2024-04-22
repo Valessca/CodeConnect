@@ -1,5 +1,58 @@
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
+img{
+    width: 100%;
+    display: flex;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #00fff2;
+    z-index: -100;
+}
+#banner{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+#banner .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+#banner .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+#banner .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+#banner .image{
+    position: relative;
+}
+#banner .image::before{
+    content: "/////////////////";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #00fff2;
+    opacity: 0.2;
+    z-index: -100;
+}
+#banner .image img{
+    max-width: 600px;
+    margin: auto;
 }
