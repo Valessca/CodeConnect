@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contato :: CodeConnect</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../assets/css/global.css" />
+		<link rel="stylesheet" href="../assets/css/contact.css" />
+	</head>
+	<body>
+		<header>
+			<nav id="header">
+				<div class="nav-logo">
+					<a href="../index.html">
+						<img src="../assets/images/logo.png" alt="logo" id="logo-image" />
+					</a>
+				</div>
+				<ul class="nav-links">
+					<li class="link"><a href="../index.html">Home</a></li>
+					<li class="link"><a href="./about.html">Quem Somos</a></li>
+					<li class="link"><a href="./services.html">Serviços</a></li>
+					<li class="link"><a href="./contact.html">Trabalhe conosco</a></li>
+					<li class="link"><a href="./conta.html">Criar conta</a></li>
+					<li class="link"><a href="./login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container">
+				<h1>Crie sua conta !</h1>
+				<p>Fale com um de nossos especialistas!</p>
+				<form>
+					<div class="form-group">
+						<label for="nome">Nome:</label>
+						<input
+							type="text"
+							class="form-control"
+							id="nome"
+							placeholder="Nome"
+						/>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="email">E-mail:</label>
+							<input
+								type="email"
+								class="form-control"
+								id="email"
+								placeholder="E-mail"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="telefone">Telefone:</label>
+							<input
+								type="tel"
+								class="form-control"
+								id="telefone"
+								placeholder="Telefone"
+								pattern="[0-9\s\-]*"
+								title="Somente números permitidos."
+							/>
+						</div>
+						<div class="form-group">
+							<label for="cpf_cnpj">CPF / CNPJ:</label>
+							<input
+								type="text"
+								class="form-control"
+								id="cpf_cnpj"
+								placeholder="CPF / CNPJ"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="cidade">Cidade:</label>
+							<input
+								type="text"
+								class="form-control"
+								id="cidade"
+								placeholder="Cidade"
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mensagem">Mensagem:</label>
+						<textarea
+							class="form-control"
+							id="mensagem"
+							rows="4"
+							placeholder="Mensagem"
+						></textarea>
+					</div>
+					<div class="form-group">
+						<label for="captcha">5 + 10 = ?</label>
+						<input
+							type="text"
+							class="form-control"
+							id="captcha"
+							placeholder="Digite o resultado"
+							autocomplete="off"
+						/>
+					</div>
+					<input
+						type="hidden"
+						id="_wpnonce-et-pb-contact-form-submitted-0"
+						name="_wpnonce-et-pb-contact-form-submitted-0"
+						value="e71ec53249"
+					/>
+					<input
+						type="hidden"
+						name="_wp_http_referer"
+						value="/faca-um-orcamento/"
+					/>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+		</main>
+
+		<footer></footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="../assets/js/global.js"></script>
+	</body>
+</html>
