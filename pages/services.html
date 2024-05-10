@@ -18,132 +18,220 @@
 	</head>
 	<body>
 		<!-- Inicio Header -->
-		<nav id="header">
-			<div class="nav-logo">
-				<a href="../index.html">
-					<img src="../assets/images/logo.png" alt="logo" id="logo-image" />
-				</a>
-			</div>
-			<ul class="nav-links">
-				<li class="link"><a href="../index.html">Home</a></li>
-				<li class="link"><a href="./about.html">Quem Somos</a></li>
-				<li class="link"><a href="./services.html">Serviços</a></li>
-				<li class="link"><a href="./clients.html">Clientes</a></li>
-				<li class="link"><a href="./contact.html">Trabalhe conosco</a></li>
-			</ul>
-		</nav>
-	</header>
+		<header>
+			<nav id="header">
+				<div class="nav-logo">
+					<a href="../index.html">
+						<img src="../assets/images/logo.png" alt="logo" id="logo-image" />
+					</a>
+				</div>
+				<ul class="nav-links">
+					<li class="link"><a href="../index.html">Home</a></li>
+					<li class="link"><a href="./about.html">Quem Somos</a></li>
+					<li class="link"><a href="./services.html">Serviços</a></li>
+					<li class="link"><a href="./contact.html">Trabalhe conosco</a></li>
+					<li class="link"><a href="./conta.html">Criar conta </a></li>
+					<li class="link"><a href="./login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
 		<!-- Fim Header -->
 
 		<!-- Inicio Main -->
-		<main>
-			<div class="container">
-				<div class="texto">
-					<h4>Nossos Serviços em Nuvem</h4>
-					<p>
-						Na CodeConnect, oferecemos uma ampla gama de serviços em nuvem para
-						atender às diversas necessidades de nossos clientes. Com nossa
-						experiência e expertise no campo da computação em nuvem, estamos
-						preparados para fornecer soluções personalizadas que impulsionarão o
-						crescimento e a inovação de sua empresa. Abaixo estão alguns dos
-						principais serviços que oferecemos:
-					</p>
-					<ul id="listServices">
-						<li>
-							<span id="toggle_HospedagemDeAplicacoes">
-								<i class="bi bi-database-fill-check"
-									>Hospedagem de Aplicações:</i
-								>
-							</span>
-							<p id="serviceText_HospedagemDeAplicacoes" style="display: none">
-								Oferecemos hospedagem confiável e escalável para seus
-								aplicativos web e móveis, permitindo que você os execute na
-								infraestrutura de nuvem da CodeConnect com desempenho otimizado.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_Armazenamento">
-								<i class="bi bi-hdd-fill"> Armazenamento:</i>
-							</span>
-							<p id="serviceText_Armazenamento" style="display: none">
-								Proteja seus dados e arquivos importantes com nosso serviço de
-								armazenamento em nuvem seguro e acessível, proporcionando
-								flexibilidade e escalabilidade conforme suas necessidades de
-								armazenamento crescem.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_ComputacaoEmNuvem">
-								<i class="bi bi-cpu-fill"> Computação em Nuvem:</i>
-							</span>
-							<p id="serviceText_ComputacaoEmNuvem" style="display: none">
-								Obtenha acesso a recursos computacionais poderosos e flexíveis,
-								incluindo servidores virtuais e ambientes de desenvolvimento,
-								para executar suas cargas de trabalho e aplicativos com
-								eficiência e agilidade.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_Seguranca">
-								<i class="bi bi-shield-fill-check"> Segurança:</i>
-							</span>
-							<p id="serviceText_Seguranca" style="display: none">
-								Mantenha seus dados e aplicativos protegidos contra ameaças
-								cibernéticas com nossos serviços de segurança em nuvem, que
-								incluem firewalls, detecção de intrusão e criptografia de ponta
-								a ponta.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_BackupERecuperacao">
-								<i class="bi bi-device-hdd-fill"> Backup e Recuperação:</i>
-							</span>
-							<p id="serviceText_BackupERecuperacao" style="display: none">
-								Garanta a continuidade dos negócios e proteja-se contra a perda
-								de dados com nossas soluções de backup em nuvem confiáveis e
-								automatizadas, que permitem uma recuperação rápida em caso de
-								falha.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_MigracaoParaNuvem">
-								<i class="bi bi-cloud-upload-fill"> Migração para nuvem:</i>
-							</span>
-							<p id="serviceText_MigracaoParaNuvem" style="display: none">
-								Facilitamos a transição para a nuvem com nossos serviços de
-								migração especializados, ajudando você a mover seus aplicativos
-								e dados de forma eficiente e sem interrupções.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_MonitoramentoEGerenciamento">
-								<i class="bi bi-binoculars-fill">
-									Monitoramento e Gerenciamento:</i
-								>
-							</span>
-							<p
-								id="serviceText_MonitoramentoEGerenciamento"
-								style="display: none"
-							>
-								Mantenha o controle total sobre seus recursos em nuvem com
-								nossas ferramentas e serviços de monitoramento e gerenciamento,
-								que garantem desempenho ideal e eficiência operacional.
-							</p>
-						</li>
-						<li>
-							<span id="toggle_Automatizacao">
-								<i class="bi bi-robot"> Automatização:</i>
-							</span>
-							<p id="serviceText_Automatizacao" style="display: none">
-								Simplifique e otimize seus processos operacionais com nossos
-								serviços de automação em nuvem, que permitem a implantação e o
-								gerenciamento automatizados de recursos e aplicativos.
-							</p>
-						</li>
-					</ul>
-				</div>
+		<main class="mb-5">
+			<div class="container d-flex flex-column align-items-center">
+				<section>
+					<div class="texto">
+						<!-- <element id="banner">
+							<element class="image" ::before> </element>
+						</element> -->
+						<h2>Nossos Serviços em Nuvem</h2>
+						<p>
+							Na CodeConnect, oferecemos uma ampla gama de serviços em nuvem
+							para atender às diversas necessidades de nossos clientes. Com
+							nossa experiência e expertise no campo da computação em nuvem,
+							estamos preparados para fornecer soluções personalizadas que
+							impulsionarão o crescimento e a inovação de sua empresa. Abaixo
+							estão alguns dos principais serviços que oferecemos:
+						</p>
+					</div>
+
+					<div class="servicesList">
+						<div
+							class="row row-cols-4 gap-5 justify-content-center align-items-stretch"
+						>
+						<div class="col d-flex">
+							<div class="card text-center">
+									<div class="card-body">
+										<h4 class="card-title">
+											<i class="bi bi-shield-fill-check"></i>
+											<p>Segurança</p>
+										</h4>
+										<p class="card-text">
+											Mantenha seus dados e aplicativos protegidos contra
+											ameaças cibernéticas com nossos serviços de segurança em
+											nuvem, que incluem firewalls, detecção de intrusão e
+											criptografia de ponta a ponta.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4 class="card-title">
+											<i class="bi bi-hdd-fill"></i>
+											<p>Armazenamento</p>
+										</h4>
+										<p class="card-text">
+											Proteja seus dados e arquivos importantes com nosso
+											serviço de armazenamento em nuvem seguro e acessível,
+											proporcionando flexibilidade e escalabilidade conforme
+											suas necessidades de armazenamento crescem.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4 class="card-title">
+											<i class="bi bi-device-hdd-fill"></i>
+											<p>Backup e Recuperação</p>
+										</h4>
+										<p class="card-text">
+											Garanta a continuidade dos negócios e proteja-se contra a
+											perda de dados com nossas soluções de backup em nuvem
+											confiáveis e automatizadas, que permitem uma recuperação
+											rápida em caso de falha.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>
+											<i class="bi bi-cloud-upload-fill"></i>
+											<p>Migração para nuvem</p>
+										</h4>
+										<p class="card-text">
+											Facilitamos a transição para a nuvem com nossos serviços
+											de migração especializados, ajudando você a mover seus
+											aplicativos e dados de forma eficiente e sem interrupções.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>
+											<i class="bi bi-robot"></i>
+											<p>Automatização</p>
+										</h4>
+										<p class="card-text">
+											Simplifique e otimize seus processos operacionais com
+											nossos serviços de automação em nuvem, que permitem a
+											implantação e o gerenciamento automatizados de recursos e
+											aplicativos.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="texto">
+						<br />
+						<h2>Solução em IoT para Eficiência Operacional</h2>
+						<br />A CodeConnect oferece soluções avançadas de Internet das
+						Coisas (IoT) para otimizar a eficiência operacional e impulsionar a
+						produtividade em empresas de diversos setores. Nossa abordagem
+						centrada em IoT visa integrar tecnologias inteligentes e conectadas
+						para melhorar processos, reduzir custos e aumentar a
+						competitividade.<br />
+						<br />
+						<h3>Componentes Principais</h3>
+						<br />
+					</div>
+					<div class="servicesList">
+						<div
+							class="row gap-5 justify-content-center align-items-stretch"
+						>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>Sensores Inteligente</h4>
+										<span class="card-text">
+											- Implementamos sensores inteligentes em equipamentos,
+											máquinas e ambientes de trabalho para coletar dados em
+											tempo real. - Esses sensores monitoram parâmetros como
+											temperatura, umidade, pressão, consumo de energia,
+											movimento, entre outros.
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>Conectividade e Comunicação</h4>
+										<span class="card-text">
+											<p>
+												Estabelecemos uma infraestrutura de conectividade
+												robusta, incluindo redes sem fio, IoT gateways e
+												protocolos de comunicação seguros.
+											</p>
+
+											<p>
+												Os dados coletados pelos sensores são transmitidos para
+												uma plataforma centralizada na nuvem para análise e
+												processamento.
+											</p>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>Plataforma de Análise de Dados</h4>
+										<p class="card-text">
+											- Desenvolvemos uma plataforma de análise de dados
+											poderosa e personalizada para extrair insights valiosos
+											dos dados coletados pelos sensores.
+											<br />- Utilizamos técnicas avançadas de análise, como
+											machine learning e análise preditiva, para identificar
+											padrões, tendências e anomalias.<br />
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex">
+								<div class="card text-center">
+									<div class="card-body">
+										<h4>
+											<p>Dashboard e Visualização de Dados</p>
+										</h4>
+										<p class="card-text">
+											- Criamos dashboards intuitivos e personalizados que
+											fornecem uma visão holística dos dados e métricas
+											operacionais.
+											<br />- Os gestores e colaboradores têm acesso a
+											informações em tempo real e relatórios detalhados para
+											tomar decisões informadas.<br />
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
+
 		<!-- Fim Main -->
 
 		<!-- Inicio Footer -->
