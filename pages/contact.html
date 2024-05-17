@@ -41,7 +41,7 @@
 		<main>
 			<div class="container">
 				<h1>Trabalhe Conosco</h1>
-				<form>
+				<form id="formulario">
 					<div class="form-group">
 						<label for="email">E-mail:</label>
 						<input
@@ -50,13 +50,15 @@
 							id="email"
 							placeholder="Digite seu e-mail aqui"
 						/>
+						<span id="erroEmail" style="color: red; display: none;"
+						>Por favor, digite um e-mail válido.</span>
 					</div>
 					<div class="form-row">
-						<div class="form-group ">
+						<div class="form-group">
 							<label for="nome">Nome:</label>
 							<input type="text" class="form-control" id="nome" />
 						</div>
-						<div class="form-group ">
+						<div class="form-group">
 							<label for="sobrenome">Sobrenome:</label>
 							<input type="text" class="form-control" id="sobrenome" />
 						</div>
@@ -75,11 +77,11 @@
 						<input type="text" class="form-control" id="endereco" />
 					</div>
 					<div class="form-row">
-						<div class="form-group ">
+						<div class="form-group">
 							<label for="cep">CEP:</label>
 							<input type="text" class="form-control" id="cep" />
 						</div>
-						<div class="form-group ">
+						<div class="form-group">
 							<label for="rg">RG:</label>
 							<input type="text" class="form-control" id="rg" />
 						</div>
@@ -146,7 +148,13 @@
 						<label for="curriculo">Anexar Currículo:</label>
 						<input type="file" class="form-control-file" id="curriculo" />
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					<button
+						type="button"
+						onclick="validarFormulario()"
+						class="btn btn-primary"
+					>
+						Enviar
+					</button>
 				</form>
 			</div>
 		</main>
