@@ -21,3 +21,36 @@
 #listServices > li > span {
 	font-weight: bold;
 }
+
+.col {
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.onExpand {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+    z-index: 10;
+}
+
+body.dark-overlay::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5; 
+    pointer-events: none; 
+	transition: 0.5s;
+	backdrop-filter: blur(1px);
+}
+
+#fill-out{
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.5px #fff;
+	font-size: 3rem;
+	font-weight: bold;
+
+}
