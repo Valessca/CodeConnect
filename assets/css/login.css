@@ -22,3 +22,15 @@ main .container {
 	opacity: 0.2;
 	z-index: -100;
 }
+
+.container form {
+	border: solid 1px #0b3d3a;
+	border-radius: 10px;
+	background-color: #0b3d3a8e;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+}
+
+body
+{ height: 100vh;}

@@ -1,44 +1,61 @@
- body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0e0d0d;
-} 
+/* body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #0e0d0d;
+} */
 
+.container::after {
+	content: "////////";
+	position: fixed;
+	top: 50px;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 35rem;
+	font-weight: 400;
+	line-height: 20rem;
+	color: #00fff2;
+	opacity: 0.2;
+	z-index: -100;
+}
 .about-section {
-    width: 90%;
-    margin: auto;
-    padding: 5px;
-    background-color: #ffffff;
-    border: 1px solid #f5fafa;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 1.6;
-    
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	line-height: 1.6;
+
+    border: solid 1px #0b3d3a;
+	border-radius: 10px;
+	padding: 10px;
+
+	background-color: #0b3d3a8e;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
 }
 
 .about-section h2 {
-    color: #070505;
-    font-size: 2em;
-    text-align: center;
+    color: #fff;
+	font-size: 2em;
+	text-align: center;
 }
 .about-section h3 {
-    color: #070505;
-    text-align: center;
+    color: #fff;
+	text-align: center;
 }
 
 .about-section p {
-    text-align: center;
-    color: #050404;
-    line-height: 1.6;
+	text-align: center;
+    color: #fff;
+	line-height: 1.6;
 }
 
-
 .about-section img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
