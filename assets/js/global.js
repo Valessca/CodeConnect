@@ -7,6 +7,11 @@ function showAlert(text) {
 const toggleButtons = document.querySelectorAll("[id^=toggle_]");
 const serviceTexts = document.querySelectorAll("[id^=serviceText_]");
 
+<<<<<<< HEAD
+=======
+
+ main
+>>>>>>> 98a7d0cd816ebf61e47ca90bb8de315cb6f149c2
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	anchor.addEventListener("click", function (e) {
 		e.preventDefault();
@@ -94,6 +99,7 @@ function validar() {
 		document.getElementById("erroSenha").style.display = "none";
 	}
 
+<<<<<<< HEAD
 	// Se todas as validações passarem, o formulário pode ser enviado
 	return true;
 }
@@ -107,3 +113,8 @@ function contractElement(element) {
     element.classList.remove('onExpand');
     document.body.classList.remove('dark-overlay');
 }
+=======
+    // Se todas as validações passarem, o formulário pode ser enviado
+    return true;
+}
+>>>>>>> 98a7d0cd816ebf61e47ca90bb8de315cb6f149c2
