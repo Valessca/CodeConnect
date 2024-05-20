@@ -25,7 +25,7 @@ input[type="color"]:focus,
     position: relative;
 }
 #banner .image::before{
-    content: "/////////////////";
+	content: "////////";
     position: absolute;
     top: 0;
     left: 50%;
@@ -53,12 +53,21 @@ input[type="color"]:focus,
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
 body {
+	overflow-x: hidden;
 	font-family: "poopins", sans-serif;
-	background-color: #0e0d0d;
 	color: #fff;
-
+	background: radial-gradient(
+		circle,
+		rgba(121, 219, 198, 0.233),
+		rgba(0, 0, 0, 1)
+	);
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:contain;
 }
 
 nav {
@@ -99,3 +108,12 @@ nav {
 	width: 70%;
 }
 
+footer {
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	background-color: #0b3d3a6b;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border: solid 1px #0b3d3a;
+	backdrop-filter: blur(5px);
+}
